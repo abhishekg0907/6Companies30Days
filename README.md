@@ -1,2 +1,2 @@
 # 6Companies30Days
-Top 90-100 recent questions by most big tech companies
+Repo for tracking 30 days of code challenge by Arsh Goyal #ReviseWithArsh #6Companies30Days
