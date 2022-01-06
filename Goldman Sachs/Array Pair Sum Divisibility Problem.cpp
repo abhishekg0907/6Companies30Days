@@ -1,8 +1,7 @@
 class Solution {
   public:
     bool canPair(vector<int> nums, int k) {
-        map<int,int> mp;
-        map<int,int> :: iterator it;
+        unordered_map<int,int> mp;
         int i;
         for(i=0;i<nums.size();i++){
             mp[nums[i]%k]++;
@@ -12,7 +11,7 @@ class Solution {
         if(k%2==0&&mp[k/2]%2)
             return false;
 
-        for(it=mp.begin(),i=1;i<=(k-1)/2;it++,i++){
+        for(i=1;i<=(k-1)/2;i++){
             if(mp[i]!=mp[k-i])
             return false;
         }
